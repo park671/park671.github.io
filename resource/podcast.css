@@ -1,0 +1,448 @@
+.podcast-player-bie{
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.jp_container{
+    height: 100%;
+}
+.player-header{
+    height: 60%;
+    position: relative;
+}
+.player-header .player-cover{
+    width: 100%;
+    height: 100%;
+}
+.player-header .player-cover img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.out .player-header .box-header{
+    background-color: rgba(255,255,255,.3);
+}
+
+.player-header .box-header{
+    position: absolute;
+    left: 0;
+    top:0;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,.3);
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+.player-header .box-header a{
+    color: #fff;
+}
+.player-header .box-header .box-channel{
+    border: none;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1;
+}
+.player-header .box-header .box-channel:before{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../../img/p-3.svg) no-repeat;
+    background-size: 100% 100%;
+    content: '';
+}
+.player-header .box-link{
+    display: none;
+}
+.out .player-header .box-link{
+    display: block;
+}
+
+.play-title{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    left: 5%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.play-title h1{
+    width: 90%;
+
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.play-title h1 a{
+    color: white;
+}
+
+.player-mid{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top:50%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.5);
+    overflow: hidden;
+}
+
+.progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top:0;
+    background-color: black;
+}
+.jp-seek-bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top:0;
+    cursor: pointer;
+}
+
+.bar-choose{
+    z-index: 2;
+    left: -1px;
+    position: absolute;
+    top:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #fff;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.bar-choose:before{
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    top:0;
+    width: 1px;
+    content: '';
+}
+
+.podcast-player-bie .jp-duration{
+    padding-right: 1rem;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.player-bottom{
+    display: flex;
+    height: 40%;
+    overflow: hidden;
+}
+
+.player-play{
+    width: 20%;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+.player-play svg{
+    width: 100%;
+    height: 100%;
+}
+.player-nub{
+    width: 40%;
+}
+.volume{
+    width: 40%;
+    display: flex;
+    height:100% ;
+}
+.volume-choose{
+    width: 44%;
+    height: 100%;
+    padding-top: 3%;
+}
+.volume-choose span{
+   display: block;
+    width: 100%;
+    height: 50%;
+}
+.volume-choose svg{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.volume-val{
+    width: 56%;
+}
+
+.p-nub{
+    line-height: 1;
+    transform: scaleY(1.32);
+    font-family:Helvetica;
+}
+
+.podcast-player-z{
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.player-z{
+    height: 100%;
+}
+
+.player-z-cover{
+    width: 30%;
+    height: 100%;
+    position:absolute;
+    line-height: 0;
+}
+.podcast-player-z .player-z-cover img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}
+
+.player-z-play{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-z-play a{
+    width: 30%;
+    height: 30%;
+}
+.player-z-play svg{
+   width: 100%;
+    height: 100%;
+    fill: white;
+}
+.z-small .player-z-play{
+    width: 20%;
+}
+.z-small .player-z-play a{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.z-small .player-z-play svg{
+    fill: #000;
+}
+.z-small .player-z-content{
+    margin-left: 20%;
+    width: 80%;
+}
+.player-z-content{
+    width: 70%;
+    margin-left: 30%;
+    position: relative;
+}
+.player-z-title h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.player-z-title h1{
+    font-size: 2.5rem;
+}
+.player-z-nub{
+    display: flex;
+    justify-content:space-between;
+    line-height: 1;
+    margin-top: 1rem;
+}
+.player-z-nub>div{
+    width: 45%;
+}
+.player-z-nub .player-z-nub-d{
+    color: transparent;
+    -webkit-text-stroke:1px #000;
+}
+.play-z-info{
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+    padding: 1rem;
+}
+.progress-z{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: white;
+}
+
+.bar-z{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    background-color: #00cf35;
+}
+
+.bar-choose-z{
+    z-index: 2;
+    left: -1px;
+    position: absolute;
+    top:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.bar-choose-z:before{
+    position: absolute;
+    height: 100%;
+    background-color: black;
+    top:0;
+    width: 1px;
+    content: '';
+}
+
+.podcast-player-y{
+    width: 100%;
+    position: relative;
+}
+
+.player-y{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-y-cover{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    clip-path: circle(50% at 50% 50%);
+}
+.podcast-player-y .play-y-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-y-play{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-y-play a{
+    width: 20%;
+    height: 20%;
+}
+.player-y-play svg{
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+.cp-buffer-holder, .cp-progress-holder, .cp-circle-control {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cp-circle-control{
+    cursor: pointer;
+}
+.cp-progress-holder.cp-gt50, .cp-progress-1.cp-fallback {
+    clip: rect(auto, auto, auto, auto) !important;
+}
+.cp-buffer-1, .cp-buffer-2, .cp-progress-1, .cp-progress-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.cp-progress-1, .cp-progress-2 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#62ff32+0,8700ff+17,ffffff+20,ffffff+20,ff0000+22,ff0000+22,0026ff+25,62ff32+31,ffffff+36,ffff00+36,0026ff+40,ffffff+46,8700ff+48,ff0000+51,62ff32+54,ffffff+57,ffffff+100 */
+    background: #62ff32; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #62ff32 0%, #8700ff 17%, #ffffff 20%, #ffffff 20%, #ff0000 22%, #ff0000 22%, #0026ff 25%, #62ff32 31%, #ffffff 36%, #ffff00 36%, #0026ff 40%, #ffffff 46%, #8700ff 48%, #ff0000 51%, #62ff32 54%, #ffffff 57%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #62ff32 0%,#8700ff 17%,#ffffff 20%,#ffffff 20%,#ff0000 22%,#ff0000 22%,#0026ff 25%,#62ff32 31%,#ffffff 36%,#ffff00 36%,#0026ff 40%,#ffffff 46%,#8700ff 48%,#ff0000 51%,#62ff32 54%,#ffffff 57%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #62ff32 0%,#8700ff 17%,#ffffff 20%,#ffffff 20%,#ff0000 22%,#ff0000 22%,#0026ff 25%,#62ff32 31%,#ffffff 36%,#ffff00 36%,#0026ff 40%,#ffffff 46%,#8700ff 48%,#ff0000 51%,#62ff32 54%,#ffffff 57%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62ff32', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.player-y .jp-duration{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cp-gt50 .cp-progress-1 .circular-1{
+    display: none;
+}
+
+.circular-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-1 svg {
+    display: block;
+    overflow: visible;
+    width: 82%;
+    height: 82%;
+}
+.circular-1 path {
+    fill: none;
+}
+.circular-1 tspan{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+}
+
+.podcast-player-z.shux .player-z-cover{
+    position: relative;
+    width: 100%;
+}
+.podcast-player-z.shux .player-z-content {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+}
+
+.out .play-z-info h1 a{
+    pointer-events: auto;
+}
+
